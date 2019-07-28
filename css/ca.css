@@ -1,0 +1,136 @@
+body{
+padding:0px;
+margin:0px;
+text-align:center;
+background:black;
+perspective:2000px;
+}	
+#center{
+width:861px;		
+margin:0px auto;
+position:relative;
+top:-2000px;
+transition:transform 3s;
+}
+.rotate_X{
+transform:rotateX(80deg);
+}
+#center:hover{
+transform:rotateX(0deg);
+}
+#nav_img{
+width:861px;
+height:0px;
+margin:auto;
+overflow:hidden;
+}
+#head_k{
+width:861px;
+height:50px;
+margin:auto;
+background:black;
+}
+#header{
+width:861px;
+height:73px;
+margin:auto;
+background:url(../png/01.png) no-repeat;
+}
+#content{
+position:relative;
+width:861px;
+height:auto;
+margin:auto;
+color:#33b;
+background:url(../png/03.png) repeat-y;
+overflow:hidden;
+}
+#lr_tel{
+width:861px;
+height:51px;
+margin:auto;
+background:url(../png/02.png) no-repeat;
+}
+#nav{
+width:861px;
+margin:auto;
+clear:both;
+}
+#footer{
+width:861px;
+height:229px;
+margin:auto;
+background:url(../png/05.png) no-repeat;
+}
+a{text-decoration:none;outline:none;blr:expression(this.onFocus=this.blur());/*IE Remove frame*/}
+a:focus{outline:none;} /*FF Remove frame*/
+area,a {behavior:url(Scripts/sk.htc)} 
+a,img{border:0;}
+#nav { height: 316px; }
+#nav span { float: left; }
+#nav span a {
+display:block;
+height:316px;
+overflow:hidden;
+background-repeat:no-repeat;
+}
+#nav span a:hover {
+background-position: 0px -316px;
+}
+#nav span a:active {
+background-position: 0 -632px;
+}
+#nav_a a { width: 245px; background-image: url(../png/4-1.png);}
+#nav_b a { width: 183px; background-image: url(../png/4-2.png);}
+#nav_c a { width: 183px; background-image: url(../png/4-3.png);}
+#nav_d a { width: 250px; background-image: url(../png/4-4.png); }
+#works_a,#works_b,#works_c,#works_d{
+position:relative;
+bottom:-1500px;
+width:760px;
+height:0px;
+margin:0px auto;
+background:#060680;
+border:1px solid #0d0d9c;
+overflow: hidden;
+}
+.kh {
+width:760px;
+height:0px;
+display:none;
+}
+.bt {
+width:760px;
+height:30px;
+margin:10px auto 5px;
+font-size:14px;
+vertical-align:middle;
+line-height:30px;
+}
+.dk {
+width:760px;
+height:140px;
+}
+.xk {
+float:left;
+width:190px;
+display:block;
+}
+.tp { 
+width:190px;
+display:block;
+}
+.smwz {
+width:190px;
+height:25px;
+color:#11c;
+font-size:12px;
+vertical-align:middle;
+line-height:25px;
+}
+.dk_190{
+height:190px;
+}
+.dk_220{
+height:220px;
+}

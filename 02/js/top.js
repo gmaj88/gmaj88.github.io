@@ -1,0 +1,1 @@
+﻿document.write('<div id="english"><a href="English/index.html">English</a> <a href="#">中文</a> <a href="http://www.tempusworld.com" target="_blank">前往腾邦国际官网</a></div>');

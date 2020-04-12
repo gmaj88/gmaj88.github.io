@@ -1,8 +1,11 @@
 $(function(){
-	var h=$(window).height();
-	var w=$(window).width();
-	var t=(h-720)/2+"px";
-	var center=$('#center');
+	let h=$(window).height();
+	let w=$(window).width();
+	let t=(h-720)/2+"px";
+	let center=$('#center');
+	let loading=$('#loading');
+	loading.animate({opacity:0},1000);
+	loading.css({dispaly:'none'});
 	if(h>720){
 		center.animate({top:t},2000);
 	}else{

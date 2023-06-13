@@ -33,4 +33,5 @@ function xingshi(div_id,div_height){
 	$('#works_d').css({'bottom':'-1500px','height':'0px'});
 	$(div_id).animate({bottom:'0px',height:div_height},1000);	
 	$('#center').css({'top':'0px','transform':'rotateX(0deg)'});
+	setTimeout(function(){start()},1200)	
 }

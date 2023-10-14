@@ -1,4 +1,4 @@
-let companyName, TJurl = 'http://works.gmaj.com.cn/Scripts/vlstat.php', IP = '127.0.0.1';
+let companyName, TJurl = 'https://works.gmaj.com.cn/Scripts/vlstat.php', IP = '127.0.0.1';
 let script = document.createElement('script');
 script.setAttribute('type', 'text/javascript');
 script.setAttribute('src', './Scripts/jstj.js');
@@ -8,11 +8,14 @@ if(document.querySelector('#IPInfo')){
 }
 if (!localStorage.getItem('company') || localStorage.getItem('company') == 'null') {
 	companyName = prompt('请来访登记：（输入姓名或公司！）');
-	let reg = /[0-9]|[\s]/
-	if (reg.test(companyName) || !companyName || companyName.length < 2) {
+	if (companyName) companyName = companyName.trim()
+	let reg = /[a-zA-Z\u4e00-\u9fa5]/
+	if (!reg.test(companyName) || !companyName || companyName.length < 2) {
 		companyName = prompt('请您输入真实的公司名：');
-		if (reg.test(companyName) || !companyName || companyName.length < 2) {
+		if (companyName) companyName = companyName.trim()
+		if (!reg.test(companyName) || !companyName || companyName.length < 2) {
 			companyName = prompt('请您输入中文公司名：');
+			if (companyName) companyName = companyName.trim()
 		}
 	}
 	if (!companyName == '') {

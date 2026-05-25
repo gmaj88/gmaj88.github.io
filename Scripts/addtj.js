@@ -1,4 +1,4 @@
-let companyName, TJurl = 'https://works.gmaj.com.cn/Scripts/vlstat.php', IP = '127.0.0.1';
+let companyName, TJurl = '', IP = '127.0.0.1';
 let script = document.createElement('script');
 script.setAttribute('type', 'text/javascript');
 script.setAttribute('src', './Scripts/jstj.js');
